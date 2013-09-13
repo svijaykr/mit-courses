@@ -1,0 +1,295 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{color}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=mygreylink     % can put red here to visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.30}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.345in}
+\addtolength{\evensidemargin}{0.45in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{0.85in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{ \textcolor{Black}{#1 \vphantom{p\^{E}}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+\definecolor{Darkblue}{rgb}{0.1, 0.25, 0.5}
+
+\begin{document}
+
+\newcommand{\myheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\huge {\textcolor{Black}{John J. Wang}}} & \textcolor{Black}{8100 Middlebury Ave.}\\
+	{\footnotesize (email): \texttt{{\href{mailto:wangjohn@mit.edu}{wangjohn@mit.edu}}},  (cell): 630-699-2227} & \textcolor{Black}{Woodridge, IL 60517} 
+	\end{tabular*}
+\\
+\vspace{0.1in}}
+
+% CHANGE HEADER SOURCE HERE
+\myheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+	\begin{itemize}
+		\item
+			\ressubheading{Massachusetts Institute of Technology}{Cambridge, MA}{{B.S. in Computer Science, B.S. in Mathematics};{ GPA:4.9/5.0}}{Aug. 2010 -- May 2014}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Coursework: Computer Security (Graduate), Algorithms (Graduate), Number Theory, Chaos Theory, Differential Equations,  Real Analysis, Linear Algebra, Classical Mechanics, Probability} 
+				\end{itemize}
+				}
+		\item			
+			\ressubheading{Illinois Mathematics and Science Academy}{Aurora, IL}{{Composite ACT: 36}; {Total SAT: 2300}; {GPA: 4.0/4.0}}{Aug. 2007-- Jun. 2010} {\footnotesize
+
+				}
+			
+	\end{itemize} % End Education list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Open Source Contributions}
+	\begin{itemize}
+		\item
+			\ressubheading{Ruby on Rails}{}{{Among Top 2\% of Contributors All Time}}{2013--present}
+			{\footnotesize
+				\begin{itemize}
+					\resitem {Fixed longstanding memory leak problem, built database querying features, and optimized model associations.}
+					\resitem {Reconstructed internal structure of Rails initialization for Google Summer of Code Project.}
+				\end{itemize}
+			}
+	\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Work Experience}
+	\begin{itemize}
+		\item
+			\ressubheading{Palantir Technologies}{Palo Alto, CA}{Software Engineer Intern}{May 2013 - Aug. 2013}
+			{ \footnotesize
+			\begin{itemize}
+				\resitem{Won Hack Week (out of 100+ teams) with collaborative graph for large-scale data analysis.}
+				\resitem{Designed and implemented an extensible notifications framework for alerting users of updates.}
+			\end{itemize}
+			} 	
+		\item
+			\ressubheading{37signals}{Cambridge, MA}{Software Consultant}{May 2013 - Aug. 2013}
+			{ \footnotesize
+			\begin{itemize}
+				\resitem{Improved inline history and comment pagination in Basecamp product.}
+			\end{itemize}
+			} 	
+
+		\item
+			\ressubheading{Panjiva, Inc.}{Cambridge, MA}{Software Engineer Intern}{May 2012 - Aug. 2012}
+			{ \footnotesize
+			\begin{itemize}
+				\resitem{Created an office command center which visualized data and alerted engineers to server and site failures, optimized Panjiva China site for search engines, and developed an automatically updating status page.}
+
+			\end{itemize}
+			} 
+		%\item 
+		%	\ressubheading{comScore, Inc.}{Chicago, IL}{Statistics Intern -- Survey Research and Methods Group}{Jan. 2012}
+		%	{ \footnotesize
+		%	\begin{itemize}
+		%		\resitem{Developed hiearchical models in R and OpenBUGS for predicting media campaign effectiveness.}
+		%	\end{itemize}
+		%	}
+
+		\item
+			\ressubheading{Morningstar, Inc.}{Chicago, IL}{Intern -- Quantitative Research Department}
+{Jun. 2011 -- Aug. 2011}
+				{ \footnotesize
+				\begin{itemize}
+					%\resitem{Saved \$20,000 by parsing millions of SEC filings to construct a bankruptcy database for the past two decades.}
+					\resitem{Constructed stock forecasting model based on machine learning and genetic programming algorithms.}
+					%\resitem{Developed platform to rank country creditworthiness (used as tool on Morningstar investment website).}
+					%\resitem{Enhanced Quantitative Research Department's general framework for data analysis by incorporating powerful econometric tools. Framework has already been applied to multiple research projects.}
+				\end{itemize}
+				}
+
+		\item 
+			\ressubheading{The MathWorks, Inc.}{Natick, MA}{ Econometrics Intern -- Computational Finance Department}{Jan. 2011 -- Feb. 2011}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Programmed prototype of Matlab tool for probabilistically determining regime changes in data.}
+				\end{itemize}
+			}
+				
+	\end{itemize} % End Work Experience
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Academic Research Experience}	
+	\begin{itemize}
+		\item
+			\ressubheading{MIT Department of Mathematics, Applied Math Group}{Cambridge, MA}{{Lord Foundation Undegraduate Researcher -- Dr. Tristan Gilet, Advisor}}{Sep. 2010 -- May 2011}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Developed a mathematical model using nonlinear differential equations for describing how pathogens disperse from crops during rainfall, leading to insights for higher crop yield.} 
+				\end{itemize}
+				}
+
+\begin{comment}
+		\item 
+			\ressubheading{Peter J. Eloranta Undergraduate Research Fellowship}{Cambridge, MA}{{Proposal Title: ``CEO Value and Compensation: Are Executives Overpaid?''}}{2011}
+			{\footnotesize
+			\begin{itemize}
+				\resitem{Won \$6,000 fellowship to study effect of CEO death on firm earnings using difference-in-difference framework.}
+			\end{itemize}}
+		\item			
+			\ressubheading{MIT Department of Economics}{Cambridge, MA}{Research Assistant to Professor David Autor}{Jun. 2010 -- May 2011}
+				{ \footnotesize				
+				\begin{itemize}
+					\resitem{Coded health care providers' procedural and diagnostic policies. Recorded social security data and police logs.}
+				\end{itemize}
+				}
+		\item
+			\ressubheading{University of Chicago Department of  Economics and Harris School}{Hyde Park, IL}{Principal Investigator--Black White Achievement Gap Research}{Oct. 2008--Apr. 2010}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Analyzed the effect of middle school graduation on the black-white achievement gap using multiple regression and interaction terms (Advised by Professors Kerwin Charles and Emily Oster).}
+				\end{itemize}
+				}
+		\item
+			\ressubheading{Northwestern University Department of Economics}{Evanston, IL}{Research Assistant to Professor Robert J. Gordon}{Jun. 2008--Sep. 2009}
+				{\footnotesize
+				\begin{itemize}
+					\resitem{Conducted comprehensive literature review on the effect of the standard of living on economic growth, fiscal multipliers in World War II, and housing conditions from 1870 to 1960 in the United States.}
+				\end{itemize}
+				}
+\end{comment}		
+
+	\end{itemize}  % End Experience list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+\resheading{Presentations and Lectures}
+	\begin{itemize}
+		\item
+			\ressubheading{Rose Hulman Undergraduate Math Conference}{Terre Haute, IN}{Student Speaker}{Mar. 2008 and Mar. 2009}
+			{\footnotesize
+			\begin{itemize}
+				\item 2009 Presentation: "A Model of Semi-Rational Behavior in Asset Markets"
+				\item 2008 Presentation: "The Black-White Achievement Gap: A Static State Intergenerational Model"
+			\end{itemize}
+			}
+		\item
+			\ressubheading{IMSAloquim}{Aurora, IL}{Student Speaker}{Apr. 2009}
+			{ \footnotesize
+			\begin{itemize}
+				\item "School Structure and Academic Achievement"
+			\end{itemize}
+			}
+	\end{itemize}
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Skills and Activities}
+	\begin{description}
+		\item[Web Development:] {Ruby on Rails}, {Javascript}, {Coffeescript}, {Backbone.js}, {Handlebars.js}, {jQuery}
+		\vspace{-5pt}
+		\item[Programming:] {Ruby}, {Python}, {Java}
+		\vspace{-5pt}
+		\item[Awards:] {Peter J. Eloranta Undergraduate Research Fellowship}, {Tau Beta Pi Honor Society}, {National Merit Finalist}, {Illinois State Scholar}
+		\vspace{-5pt}
+		\item[Undergraduate Activities:] {MIT Golf Team Captain}, {MIT Undergraduate Economics Association Activities Chair}, {Phi Sigma Kappa Secretary}, {MIT Masters Swim Team}
+		\vspace{-5pt}
+		\item[Hobbies:]{Golf}, {Swimming}, {Literature}  
+
+	\end{description} % End Skills list
+
+\end{document}
+
+
+%Only Print References If Requested!  Maybe even put it in it's own page.  Must have same heading as first page.
+%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\myheader
+\resheading{References}
+	\begin{center}
+		\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}  l l l }
+			Toby Rummans & Eric Karl & Gordon Smith \\
+			Entry Level Web Developer & Computer Science \& Engineering  & Technology Support Specialist \\ 
+			\vspace{10pt} 
+			Memolinkcorp & BYU-Idaho & BYU-Idaho \\ 
+			[removed] & 525 South Center St. & 525 South Center St.  \\
+			Denver, CO 80210 & Rexburg ID 83460 & Rexburg ID 83460 \\
+			[removed] & (208) 496-3097 & (208) 496-2816 \\
+		\end{tabular*}
+	\end{center}
+	
+% \end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% GENERAL RESUME NOTES %
+%%%%%%%%%%%%%%%%%%%%%%%%
+Need to brush up on the skills section?  Here are some really good ideas:
+
+- Communication: The ability to express and interpret ideas and convey knowledge. 
+Skills like speaking effectively, writing concisely, listening attentively, expressing ideas, 
+reporting information, editing, interviewing, and facilitating group discussion. 
+ 
+- Research and Planning: The ability to search for specific knowledge and formulate a 
+program for a definite course of action. Skills like forecasting, predicting, identifying 
+issues, finding alternatives, gathering information, solving problems, setting goals, 
+extracting information, and developing strategies. 
+ 
+- Human Relations: The ability to apply interpersonal skills to resolve conflict, relate to 
+people, and help people. Skills like providing support for others, listening, delegating 
+with respect, representing others, asserting, developing rapport, and perceiving 
+feelings. 
+ 
+- Management, Organization, Leadership: The ability to supervise others and guide 
+individuals and groups towards the completion of tasks. Skills like managing groups, 
+selling ideas, making decisions, managing conflict, coordinating tasks, teaching, 
+enlisting help. 
+
+Source: 
+http://www.squawkfox.com/2009/03/08/6-action-words-that-make-your-resume-rock/
+
+Other Resources: 
+http://www.tvmier.com/Resume_Education.html
+
