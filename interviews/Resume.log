@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.12)  7 SEP 2013 13:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.12)  10 SEP 2013 22:09
 entering extended mode
  %&-line parsing enabled.
 **Resume.tex
@@ -35,16 +35,8 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
-Enter file name: /usr/share/texmf-texlive/text/latex/fullpage/fullpage.sty
-
-! LaTeX Error: File `/usr/share/texmf-texlive/text/latex/fullpage/fullpage.sty'
- not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: /usr/share/texmf-texlive/tex/latex/fullpage/fullpage.sty
-(/usr/share/texmf-texlive/tex/latex/fullpage/fullpage.sty
+Enter file name: /usr/share/texmf-texlive/tex/latex/base/fullpage.sty
+(/usr/share/texmf-texlive/tex/latex/base/fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip43
 )
@@ -281,9 +273,9 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 229--230
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Resume.aux) ) 
 Here is how much of TeX's memory you used:
- 4330 strings out of 495061
- 64021 string characters out of 1182621
- 141234 words of memory out of 3000000
+ 4328 strings out of 495061
+ 63924 string characters out of 1182621
+ 141226 words of memory out of 3000000
  7458 multiletter control sequences out of 15000+50000
  9758 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
@@ -296,7 +288,7 @@ type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public
 /cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
 texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Resume.pdf (1 page, 122874 bytes).
+Output written on Resume.pdf (1 page, 122855 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
