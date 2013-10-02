@@ -5,6 +5,7 @@
 
 import math
 import collections
+import sys
 
 def word_rank(word):
     if len(word) <= 1:
@@ -37,9 +38,4 @@ def repetition_factor(letters):
     return factor
 
 if __name__ == '__main__':
-    print word_rank('AAAB'), 1
-    print word_rank('BAB'), 2
-    print word_rank('ABAB'), 2
-    print word_rank('BAAA'), 4
-    print word_rank('QUESTION'), 24572
-    print word_rank('BOOKKEEPER'), 10743
+    print word_rank(sys.argv[1])
